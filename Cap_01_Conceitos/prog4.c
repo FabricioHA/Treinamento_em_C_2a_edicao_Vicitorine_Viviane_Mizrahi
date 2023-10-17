@@ -1,0 +1,22 @@
+#include <stdio.h>//para printf()
+#include <stdlib.h>//para system()
+#include <locale.h>//garante acentuação adequada do programa
+//os includes nos permitem icluir linhas de comando em uma unica linha no arquivo, referenciando-os por seus respectivos nomes, como visto acima, assim poderiamos
+// criar uma biblioteca própria de funções e adicionálos da mesmo forma, por exemplo.
+
+int main() //define o tipo de valor que a função irá retornar com o "return"
+{
+	setlocale(LC_ALL, ""); //Ajusta caractéres especiais na execução do programa
+	
+	int evento = 5;//varivael int
+	char corrida = 'C';//variavel string
+	
+	float tempo = 27.25;//variavel decimal float
+	
+	printf("\nO tempo vitorioso na eliminatória %c", corrida);
+	printf("\nda competicçao %d foi %f.\n", evento, tempo);
+	
+	system("PAUSE");
+	return 0;
+
+}
