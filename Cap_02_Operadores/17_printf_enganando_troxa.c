@@ -39,22 +39,25 @@ int main() //define o tipo de valor que a função irá retornar com o "return"
 	//pré-fixado
 	n=i * (i+1) + (++i);
 	printf("\nEngana troxa 1: n = %d\n", n); //n=16
-	memset (&i, 0, sizeof(i));//Limpar variavel
-	memset (&n, 0, sizeof(n));//Limpar variavel
+	i=0,n=0;
 	i = 3;
-	printf("\nEngana troxa 2: n = %d\n", n=i * (i+1) + (++i)); //n=16
-	i = 3;
-	memset (&i, 0, sizeof(i));//Limpar variavel
-	memset (&n, 0, sizeof(n));//Limpar variavel
 	
 	//pré-fixado
+	printf("\nEngana troxa 2: n = %d\n", n=i * (i+1) + (++i)); //n=16
+	i=0,n=0;
 	i = 3;
+	
+	
+	//pós-fixado
 	n=i * (i+1) + (i++);
 	printf("\nEngana troxa 3: n = %d\n", n); //n=15
-	memset (&i, 0, sizeof(i));//Limpar variavel
-	memset (&n, 0, sizeof(n));//Limpar variavel
+	i=0,n=0;
 	i = 3;
-	printf("\nEngana troxa 4: n = %d\n", n=i * (i+1) + (i++)); //n=35
+	
+	//pós-fixado
+	printf("\nEngana troxa 4: n = %d\n", n=i * (i+1) + (i++)); //n=15
+	i=0,n=0;
+	i = 3;
 	
 	system("PAUSE");
 	return 0;
