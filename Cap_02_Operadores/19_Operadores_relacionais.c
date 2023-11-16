@@ -50,12 +50,12 @@ int main()
 	
 	printf("Verdadeiro %d\n", verdadeiro); //%d Inteiro de valor decimal
 	//Nesse caso, 15 é menor que 20, sendo verdadeiro
-	printf("Falso %d\n", falso);
+	printf("Falso %d\n\n", falso);
 	//Nesse caso, podemos ver que 15 não é igual a 20, sendo falso
 	
 	//Precedencia dos operadores relacionais
-	printf("O valor da expressão 4 + 1 < 3 é %d\n", 4+1<3);
-	printf("O valor da expressão 2 < 1 + 3 é %d\n", 2<1+3);
+	printf("Precedencia de valores\nO valor da expressão 4 + 1 < 3 é %d\n", 4+1<3);
+	printf("O valor da expressão 2 < 1 + 3 é %d\n\n", 2<1+3);
 	
 	/*Operadores relacionais tem precedência menor em relação aos operadores,
 	isso significa que os operadores são avaliados antes dos relacionais, como podemos
