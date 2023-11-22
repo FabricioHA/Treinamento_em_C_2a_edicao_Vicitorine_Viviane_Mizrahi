@@ -31,7 +31,7 @@ int main()
 	setlocale(LC_ALL,"");
 	system("cls");
 	
-	//Inserir dia e mês corretamente
+	//Inserir dia e mês corretamente com E/AND
 	int dia, mes;
 	
 	printf("\nDigite o dia correto: ");
@@ -51,20 +51,37 @@ int main()
 	
 	system("PAUSE");
 	
-	//Digitar um caractere corretamente
+	//Digitar um caractere corretamente com OU/OR
 	
-	char caractere[1];
+	char caractere;
 	
 	printf("\nDigite s ou S: ");
-	scanf("%c", &caractere[1]);
+	scanf(" %c", &caractere);
 	
 	if(caractere=='s' || caractere=='S')
 	{
-		printf("\nParabéns, digitou o %c corretamente (sério, sem ironia)!!\n\n", caractere[1]);
+		printf("\nParabéns, digitou o %c corretamente (sério, sem ironia)!!\n\n", caractere);
 	}
 	else
 	{
 		printf("\nTá usando quantos graus? era só digitar o que estava escrito... :(\n\n");
+	}
+	
+	system("PAUSE");
+	
+	//Comprovar genero com negação NOT
+	
+	int genero;
+	printf("\nHora do teste! Digite 0 ou 1: ");
+	scanf(" %d", &genero);
+	
+	if(!genero)
+	{
+		printf("\nSe digitou 0 é porque é homem... Não me pergunte por que :/\n");
+	}
+	else
+	{
+		printf("\nSe digitou 1 é porque é mulher... sério, não faço idéia do porque :/\n\n");
 	}
 	
 	system("PAUSE");
