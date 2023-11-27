@@ -60,13 +60,15 @@ int main()
 	{
 		printf("\nO valor de x é igual a %d e é um número negativo :)\n\n", abs);
 	}
+	system("PAUSE");
 	
 	//Se par ou impar
 	int y;
 	
-	printf("Digite um número par ou impar: ");
-	scanf("%d", );
+	printf("\nDigite um número par ou impar: ");
+	scanf("%d", &y);
 	
+	printf("\nO número que você digitou é %s\n\n", (y%2) ? "Impar" : "Par");
 	
 	system("PAUSE");
 	return 0;
