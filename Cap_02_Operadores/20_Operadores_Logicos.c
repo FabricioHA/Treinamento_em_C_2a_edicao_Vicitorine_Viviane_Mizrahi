@@ -21,8 +21,8 @@ E1 || E2  Será falso (0) somente se E1 e E2 forem falsos. Caso não, será verdade
 !E2   Nega seu valor, resultando em verdadeio se falso e falso se verdadeiro
 */
 
-#include <stdio.h> //Inclui printf()
-#include <stdlib.h> //inclui scanf()
+#include <stdio.h> //Inclui printf() e scanf()
+#include <stdlib.h> //inclui system()
 #include <locale.h> //Inclui ajuste de caracteres
 #include <conio.h> //inclui getch() e getche()
 

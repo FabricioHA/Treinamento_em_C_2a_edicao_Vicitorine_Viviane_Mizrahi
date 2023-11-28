@@ -13,8 +13,8 @@ se exp1 ==1 ? exp2 : exp3  ========>  valor validado: exp2;
 se exp1 ==0 ? exp2 : exp3  ========>  valor validado: exp3;
 */
 
-#include <stdio.h> //Incluir printf()
-#include <stdlib.h> //Incluir scanf()
+#include <stdio.h> //Incluir printf() e scanf()
+#include <stdlib.h> //Incluir system()
 #include <locale.h> //Ajustar caracteres especiais
 #include <conio.h>  //incluir getch() e getche()
 

@@ -9,6 +9,10 @@ Os operadores relacionais são:
 ==  igual
 !=  diferente
 
+Eles basicamente fazem a comparação entre dois valores distintos, como por exemplo:
+2 < 3 então...
+45 >= x então...
+
 Eles normalmente são muito utilizados em laços de repetção e condicionais.
 
 Os operadores relacionais basicamente representam o vocabulário utilizado que a maquina
@@ -33,8 +37,8 @@ código de formatação         significado
 %Lf                          double longo
 */
 
-#include <stdio.h> //Inclui printf()
-#include <stdlib.h>//Inclui scanf()
+#include <stdio.h> //Inclui printf() e scanf()
+#include <stdlib.h>//Inclui system()
 #include <locale.h>//Ajusta caracteres
 #include <conio.h>//Inclui getch() e getche()
 
