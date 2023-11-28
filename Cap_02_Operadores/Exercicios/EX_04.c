@@ -17,7 +17,7 @@ cdigo de formatação         significado
 %lf                          ponto flutuante longo
 %Lf                          double longo
 */
-#include <stdio.h>//para printf()
+#include <stdio.h>//para printf() e scanf()
 #include <stdlib.h>//para system()
 #include <locale.h>//garante acentuação adequada do programa
 #include <conio.h>//para getche() e getch()

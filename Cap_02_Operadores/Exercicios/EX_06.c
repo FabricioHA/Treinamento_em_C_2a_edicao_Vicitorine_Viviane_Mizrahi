@@ -2,8 +2,8 @@
 int a=1, b=2, c=3, d=4;
 */
 
-#include <stdlib.h> //Biblioteca do printf()
-#include <stdio.h> //Biblioteca do scanf()
+#include <stdlib.h> //Biblioteca do printf() e scanf()
+#include <stdio.h> //Biblioteca do system()
 #include <locale.h> //formatação de caracteres especiais
 #include <conio.h> //Bibliotecas dos comandos getch() e getche()
 

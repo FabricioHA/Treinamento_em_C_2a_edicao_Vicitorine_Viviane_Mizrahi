@@ -5,8 +5,8 @@ b)x  +  ++y
 Vamos testar
 */
 
-#include <stdio.h> // Incluir função printf()
-#include <stdlib.h>  //Incluir função scanf()
+#include <stdio.h> // Incluir função printf() e scanf
+#include <stdlib.h>  //Incluir função system()
 #include <locale.h>  //Manter formatação de texto e caracteres especias
 #include <conio.h>  //Incluir funções getche() e getch()
 
