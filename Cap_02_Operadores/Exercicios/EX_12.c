@@ -36,8 +36,7 @@ int main()
 	
 	setlocale(LC_ALL, ""); //converter caracteres especiais
 	
-	system("title Capitulo 02, Exercicio 12"); //Definir titulo da tela de saída
-	system("mode con cols=11 lines 300"); //Ajustar tamanho da tela
+	system("title Capitulo 02, Exercicio 12"); //Definir titulo da tela de saída	
 	
 	system("cls"); //Limpar tela
 	system("color 0A"); //Mudar cor de fundo e texto com system() do stdlib.h
