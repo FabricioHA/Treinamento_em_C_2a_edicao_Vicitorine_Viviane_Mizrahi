@@ -1,17 +1,17 @@
 #include <stdio.h>//para printf()
 #include <stdlib.h>//para system()
-#include <locale.h>//garante acentuaÁ„o adequada do programa
+#include <locale.h>//garante acentua√ß√£o adequada do programa
 //os includes nos permitem icluir linhas de comando em uma unica linha no arquivo, referenciando-os por seus respectivos nomes, como visto acima, assim poderiamos
-// criar uma biblioteca prÛpria de funÁıes e adicion·los da mesmo forma, por exemplo.
+// criar uma biblioteca pr√≥pria de fun√ß√µes e adicion√°los da mesmo forma, por exemplo.
 
 
 /*Base_Numerica_printf
-Nos permite estabelecer a base numÈrica na qual desejamos ver impreso com base na numeraÁ„o dos caracretes ASCII
+Nos permite estabelecer a base num√©rica na qual desejamos ver impreso com base na numera√ß√£o dos caracretes ASCII
 */
 
-int main() //define o tipo de valor que a funÁ„o ir· retornar com o "return"
+int main() //define o tipo de valor que a fun√ß√£o ir√° retornar com o "return"
 {
-	setlocale(LC_ALL, ""); //Ajusta caractÈres especiais na execuÁ„o do programa
+	setlocale(LC_ALL, ""); //Ajusta caract√©res especiais na execu√ß√£o do programa
 	
 	/*
 	%d = Decimal
