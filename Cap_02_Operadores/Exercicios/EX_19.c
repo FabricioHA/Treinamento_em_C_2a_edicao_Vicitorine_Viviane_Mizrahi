@@ -1,23 +1,23 @@
-/*19_Em um cercado, h· v·rios patos e coelhos. Escreva um programa que solicite ao
-usu·rio o total de cabeÁas e o total de pÈs, determinando quantos patos e quantos
+/*19_Em um cercado, h√° v√°rios patos e coelhos. Escreva um programa que solicite ao
+usu√°rio o total de cabe√ßas e o total de p√©s, determinando quantos patos e quantos
 coelhos se encontram nesse cercado
 
-minimo de cabeÁas = 2
-minimo de pÈs = 6
+minimo de cabe√ßas = 2
+minimo de p√©s = 6
 */
 
 #include <stdio.h> //Adiciona Printf() e scanf()
 #include <stdlib.h> //Adiciona system() e atoi()
 #include <locale.h> // Ajusta caracteres especiais
 #include <conio.h> // Adiciona getch() e getche()
-#include <windows.h> // Adiciona opÁıes gr·ficas do windows
+#include <windows.h> // Adiciona op√ß√µes gr√°ficas do windows
 #include <ctype.h> // Adiciona isdigit()
 
 int main()
 {
 	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
 	setlocale(LC_ALL, "");
-	system("title Capitulo 2, ExercÌcio 19");
+	system("title Capitulo 2, Exerc√≠cio 19");
 	system("COLOR 0A");
 	
 	int cabecas, pes, patos, coelhos;
@@ -26,13 +26,13 @@ int main()
 		//Entrada de dados
 		do
 		{
-			printf("digite quantas cabeÁas tem no curral: ");
+			printf("digite quantas cabe√ßas tem no curral: ");
 			scanf("%d", &cabecas);
 		}while(cabecas<2);
 		
 		do
 		{
-			printf("\ndigite quantos pÈs tem no curral: ");
+			printf("\ndigite quantos p√©s tem no curral: ");
 			scanf("%d", &pes);
 		}while(pes%cabecas!=0);
 		
@@ -41,11 +41,11 @@ int main()
 		patos = -(pes - cabecas * 4)/ 2;
 		coelhos = cabecas - patos;
 		
-		//SaÌda de dados
+		//Sa√≠da de dados
 		
 		if(patos <0 || coelhos<0)
 		{
-			printf("O numero de pÈs e cabeÁas n„o batem! repita novamente\n\n");
+			printf("O numero de p√©s e cabe√ßas n√£o batem! repita novamente\n\n");
 		}
 		else
 		{
@@ -53,9 +53,6 @@ int main()
 		}
 	}while(patos <0 || coelhos<0);
 	
-	
 	system("PAUSE");
 	return 0;
-
 }
-
