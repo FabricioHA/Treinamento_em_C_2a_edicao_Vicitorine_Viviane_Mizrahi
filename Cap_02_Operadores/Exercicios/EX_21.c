@@ -41,8 +41,9 @@ int main()
 	A partida termina quando apenas 3 jogadores estiverem com plaquetas
 	*/
 	
-	int p1, p2, p3;
-	float premiacao;
+	int p1, p2, p3, totalpontos;
+	float premiacao = 780000;
+	float valor1, valor2, valor3, divisor;
 	char nome1[30], nome2[30], nome3[30];
 	
 	//Entrada de dados
@@ -74,54 +75,61 @@ int main()
 	
 	printf("\n\n==============================================================================");
 	
+	totalpontos = p1+p2+p3;
+	divisor = premiacao/totalpontos;
+	valor1 = p1*divisor;
+	valor2 = p2*divisor;
+	valor3 = p3*divisor;
+	
 	//Saída de Dados
 	if(p1>p2 && p1>p3 && p2>p3)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome1, p1, nome2, p2, nome3, p3);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome1, p1, valor1, nome2, p2, valor2, nome3, p3, valor3);
 	}
 	else if(p1>p2 && p1>p3 && p3>p2)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome1, p1, nome3, p3, nome2, p2);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome1, p1, valor1, nome3, p3, valor3, nome2, p2, valor2);
 	}
 	else if(p2>p1 && p2>p3 && p1>p3)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome2, p2, nome1, p1, nome3, p3);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome2, p2, valor2, nome1, p1, valor1, nome3, p3, valor3);
 	}
 	else if(p2>p1 && p2>p3 && p3>p1)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome2, p2, nome3, p3, nome1, p1);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome2, p2, valor2, nome3, p3, valor3, nome1, p1, valor1);
 	}
 	else if(p3>p1 && p3>p2 && p1>p2)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome3, p3, nome1, p1, nome2, p2);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome3, p3, valor3, nome1, p1, valor1, nome2, p2, valor2);
 	}
 	else if(p3>p1 && p3>p2 && p2>p1)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome3, p3, nome2, p2, nome1, p1);
+		printf("\n\n1º %s com %d pontos ganhou R$%.2f;  2º %s com %d pontos ganhou R$%.2f;  3º %s com %d pontos ganhou R$%.2f;", nome3, p3, valor3, nome2, p2, valor2, nome1, p1, valor1);
 	}
 	else if(p1==p2 && p1>p3)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome1, p1, nome2, p2, nome3, p3);
+		printf("\n\n1º %s com %d pontos e %s com %d pontos ganharam R$%.2f respectivamente;  2º %s com %d pontos;", nome1, p1, nome2, p2, nome3, p3);
 	}
 	else if(p1==p3 && p1>p2)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome1, p1, nome3, p3, nome2, p2);
+		printf("\n\n1º %s com %d pontos e %s com %d pontos ganharam R$%.2f respectivamente;  2º %s com %d pontos;", nome1, p1, nome3, p3, nome2, p2);
 	}
 	else if(p2==p3 && p2>p1)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome2, p2, nome3, p3, nome1, p1);
+		printf("\n\n1º %s com %d pontos e %s com %d pontos ganharam R$%.2f respectivamente;  2º %s com %d pontos;", nome2, p2, nome3, p3, nome1, p1);
 	}
 	
 	printf("\n==============================================================================\n\n");
+	
 	system("PAUSE");//Congelar programa
 	return 0;//Retornar se valor == a 0
 }
