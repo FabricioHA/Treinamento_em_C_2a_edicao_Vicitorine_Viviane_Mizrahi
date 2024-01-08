@@ -66,11 +66,11 @@ int main()
 		printf("Quantos pontos %s fez?: ", nome3);
 		scanf("%d", &p3);
 		
-		if(p1 > 6 || p2 > 6 || p3 > 6 || p1+p2+p3 >12)
+		if(p1 > 6 || p2 > 6 || p3 > 6 || p1+p2+p3 >12 < 8)
 		{
 			printf("\n\nOs pontos foram contabilizados incorretamente, digite novamente...");
 		}else;
-	}while(p1 > 6 || p2 > 6 || p3 > 6 || p1+p2+p3 >12);
+	}while(p1 > 6 || p2 > 6 || p3 > 6 || p1+p2+p3 >12 || p1+p2+p3 < 8);
 	
 	printf("\n\n==============================================================================");
 	
@@ -78,33 +78,49 @@ int main()
 	if(p1>p2 && p1>p3 && p2>p3)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %scom %d pontos;", nome1, p1, nome2, p2, nome3, p3);
+		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome1, p1, nome2, p2, nome3, p3);
 	}
 	else if(p1>p2 && p1>p3 && p3>p2)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %scom %d pontos;", nome1, p1, nome3, p3, nome2, p2);
+		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome1, p1, nome3, p3, nome2, p2);
 	}
 	else if(p2>p1 && p2>p3 && p1>p3)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %scom %d pontos;", nome2, p2, nome1, p1, nome3, p3);
+		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome2, p2, nome1, p1, nome3, p3);
 	}
 	else if(p2>p1 && p2>p3 && p3>p1)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %scom %d pontos;", nome2, p2, nome3, p3, nome1, p1);
+		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome2, p2, nome3, p3, nome1, p1);
 	}
 	else if(p3>p1 && p3>p2 && p1>p2)
 	{
 		printf("\n//Podio//");
-		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %scom %d pontos;", nome3, p3, nome1, p1, nome2, p2);
+		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome3, p3, nome1, p1, nome2, p2);
 	}
 	else if(p3>p1 && p3>p2 && p2>p1)
 	{
 		printf("\n//Podio//");
 		printf("\n\n1º %s com %d pontos;  2º %s com %d pontos;  3º %s com %d pontos;", nome3, p3, nome2, p2, nome1, p1);
 	}
+	else if(p1==p2 && p1>p3)
+	{
+		printf("\n//Podio//");
+		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome1, p1, nome2, p2, nome3, p3);
+	}
+	else if(p1==p3 && p1>p2)
+	{
+		printf("\n//Podio//");
+		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome1, p1, nome3, p3, nome2, p2);
+	}
+	else if(p2==p3 && p2>p1)
+	{
+		printf("\n//Podio//");
+		printf("\n\n1º %s com %d pontos e %s com %d pontos;  2º %s com %d pontos;", nome2, p2, nome3, p3, nome1, p1);
+	}
+	
 	printf("\n==============================================================================\n\n");
 	system("PAUSE");//Congelar programa
 	return 0;//Retornar se valor == a 0
