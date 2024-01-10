@@ -17,8 +17,17 @@ int main()
 	system("title Capitulo 2, Exercicio 22");//Titulo janela CMD
 	system("COLOR 0A"); //Alterar paleta de cores CMD
 	
+	float latao, zinco, cobre;
 	
+	//valores de entrada
+	printf("/////CALCULAR PRODUÇÃO DE LATÃO/////\n\n");
+	printf("Digite quantos quilos de latão você quer produzir: ");
+	scanf("%f", &latao);
+	printf("\n\n=======================================================");
 	
+	printf("\nPara produzir Latão de %.2fKg(s) será necessário:\n\n%.2fKg(s) de zinco  |  %2.fKg(s) de cobre", latao, latao* 0.3, latao*);
+	
+	printf("\n\n=======================================================\n\n");
 	system("PAUSE");//Congelar sistema
 	return 0;//Se verdadeiro, retornar 0
 }
